@@ -46,6 +46,12 @@ inet_ntoa()作用是将一个sin_addr结构体输出成IP字符串(network to as
 `ip_str = inet_ntoa(sin.sin_addr.s_addr);`
 
 ---
+首先得包含两个头文件
+```c
+#include <sys/types.h>
+#include <socket.h>
+```
+
 ## socket函数：  
 
 `int socket(int domain ,int type, int protocol);`
@@ -109,4 +115,4 @@ bind(sock_fd, (struct sockaddr *)&server_addr, sizeof(server_addr));
 ```
 
 ## setsockopt
-`int setsockopt(int socket, int level, int option_name,const void *option_value, size_t ，ption_len);`
+`int setsockopt(int socket, int level, int option_name,const void *option_value, size_t ，ption_len);`  

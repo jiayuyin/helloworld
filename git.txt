@@ -21,6 +21,25 @@ git remote add origin git@github.com:yourname/yourrepositoryname.git //关联远
 
 git push -u origin master //把本地库的所有内容推送到远程库上
 
-下载
-git clone xxx  //下载到本地
+提交代码三步：
+git add .
+git commit -m "first commit"
+git push -u origin master
 
+下载
+git clone 地址  //下载到本地
+git clone -b 分支名 地址    //下载分支的代码到本地
+
+
+git checkout -- file //回退file的修改
+
+git checkout -b 分支名    //新建分支并切换至新分支
+git branch -d XX    //普通删除分支
+git branch -D XX    //强制删除分支
+
+
+git status不显示中文：
+git config --global core.quotepath false
+然后设置Options->test
+Locale：zh_CN
+Character：UTF-8

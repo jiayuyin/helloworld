@@ -1,0 +1,9 @@
+svn co(checkout) [-r revision] xxxxxxxxxxxxxx --username xx --password xx
+svn ci(commit) xxx xxx -F log.txt --username xx
+svn copy svnxxxxxxxxxx ./
+svn move xx xxx
+svn propset svn:executable on xxx
+svn add
+svn delete
+
+
